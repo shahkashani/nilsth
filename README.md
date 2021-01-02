@@ -59,7 +59,7 @@ se endringene dine. Det kan hende du må skru av cache i Chrome dev tools.
 Hvis du vil teste ut produksjonsversjonen lokalt, kjører du bare `npm start`
 etter en build.
 
-# Filter
+# Filer
 
 Her er en ganske kjapp oppsummering av alle filene her.
 
