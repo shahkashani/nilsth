@@ -30,9 +30,9 @@ export default function App() {
    *
    * Du bygger rett og slett HTML'en din basert på hvordan data'en din ser ut.
    */
-  const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(null);
-  const [results, setResults] = useState([]);
+  const [isLoading, setIsLoading] = useState(false); // false er ønsket default verdi til dette state-feltet 
+  const [errorMessage, setErrorMessage] = useState(null); // null er ønsket default verdien
+  const [results, setResults] = useState([]); // En tom aray er ønsket default verdi her
 
   const onTextInputChange = async (event) => {
     setResults([]);
