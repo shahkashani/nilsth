@@ -77,8 +77,8 @@ Her er en ganske kjapp oppsummering av alle filene her.
    først laster inn. Ofte kalles dette din JavaScript "entrypoint". Disse filene
    pleier å være ganske små og bare laste inn globale ting som trengs, som
    f.eks. bootstrap CSS. `JSX` er en React greie. Du vet at HTML tags er f.eks.
-   <div>, <input>, etc. `JSX` betyr bare at dette er en fil hvor utvikleren har 
-   introdusert nye tags / komponenter, som f.eks. <App> eller <SearchResult>.
+   `<div>`, `<input>`, etc. `JSX` betyr bare at dette er en fil hvor utvikleren har 
+   introdusert nye tags / komponenter, som f.eks. `<App>` eller `<SearchResult>`.
 4. `src/component/App/index.jsx` - siden entrypoints pleier å være ganske små,
    har jeg puttet mesteparten av funksjonaliteten her isteden. Det er hipp som
    happ om sånne App filer ligger i samme mappe som entrypointen eller i
