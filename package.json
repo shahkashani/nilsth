@@ -1,0 +1,37 @@
+{
+  "name": "nilsth",
+  "version": "1.0.0",
+  "description": "Mysen Nights",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && ./node_modules/.bin/parcel build --no-source-maps src/index.html",
+    "start": "cd dist && php -S localhost:9000",
+    "dev:client": "./node_modules/.bin/parcel dev src/index.html",
+    "dev:server": "cd dist && php -S localhost:9000",
+    "dev": "mkdir -p dist && ./node_modules/.bin/concurrently --kill-others \"npm run dev:client\" \"npm run dev:server\""
+  },
+
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/api",
+        "staticOutDir": "api"
+      }
+    ],
+    "watcherGlob": "**/*.php"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0"
+  }
+}
